@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<form ng-submit="vm.submit(vm.form)">
+  <div>
+    <label for="_email">邮箱</label>
+    <input id="_email" type="email" ng-model="vm.from.email" />
+  </div>
+  <div>
+    <label for="_nickname">昵称</label>
+    <input id="_nickname" type="text" ng-model="vm.from.nickname" />
+  </div>
+  <div>
+    <label for="_password">密码</label>
+    <input id="_password" type="password" ng-model="vm.from.password" />
+  </div>
+  <div>
+    <label for="_retypedPassword">确认密码</label>
+    <input id="_retypedPassword" type="password"  ng-model="vm.retypedPassword" />
+  </div>
+  <div>
+    <label for="_captcha">图形验证码</label>
+    <input id="_captcha" type="text" vm.from.captcha />
+  </div>
+<div>
+  <input type="checkbox" id="_accepted"   ng-model="vm.accepted" />
+  <label for="_accepted">我已阅读并同意</label>
+  <a href="">用户服务协议</a>
+</div>
+  <div>
+    <button type="submit">提交</button>
+  </div>
+</form>
+<script>
+
+
+</script>
+</body>
+</html>

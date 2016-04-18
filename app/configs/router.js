@@ -21,3 +21,15 @@ angular.module('app').config(function ($stateProvider, $urlRouterProvider) {
 
   $urlRouterProvider.otherwise('/notFound');
 });
+//定义父路由
+$urlRouterProvider.state('reader',{
+  url:'/readr',
+  template:'<div ui-view></div>',
+  abstract:true
+});
+//定义子路由
+$urlRouterProvider.state('reader.create',{
+ url:'create',
+  templateUrl:'contrullers/reader/create.html',
+  controller:'ReaderCreateCtrl as vm'
+});
